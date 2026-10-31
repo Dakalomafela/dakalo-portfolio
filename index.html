@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dakalo Mafela | Full-Stack AI Engineer</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--tx:#12141c;--mu:#5d6475;--ac:#4f46e5;--ac2:#06b6d4;--bd:#e3e6ef;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0d14;--card:#141824;--tx:#eef0f7;--mu:#9aa2b8;--ac:#818cf8;--ac2:#22d3ee;--bd:#242a3b}}
+:root[data-theme="dark"]{--bg:#0b0d14;--card:#141824;--tx:#eef0f7;--mu:#9aa2b8;--ac:#818cf8;--ac2:#22d3ee;--bd:#242a3b}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;backdrop-filter:blur(12px);background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--bd)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+nav b{font-weight:800}nav .l{display:flex;gap:18px;align-items:center;font-size:14px;color:var(--mu)}
+.btn{border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:8px 14px;border-radius:10px;font:inherit;font-size:14px;cursor:pointer}
+.btn.p{background:linear-gradient(135deg,var(--ac),var(--ac2));color:#fff;border:0;font-weight:600}
+kbd{font:12px monospace;border:1px solid var(--bd);border-radius:5px;padding:1px 5px;color:var(--mu)}
+.hero{padding:72px 0 40px;display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:center}
+.tag{display:inline-flex;gap:8px;align-items:center;font-size:13px;border:1px solid var(--bd);background:var(--card);padding:5px 12px;border-radius:99px;color:var(--mu)}
+.dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px #22c55e33}
+h1{font-size:clamp(36px,6vw,62px);line-height:1.05;margin:16px 0;letter-spacing:-1.5px}
+.g{background:linear-gradient(135deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--mu);font-size:18px;max-width:560px}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.term{background:#0d1117;color:#c9d1d9;border-radius:14px;border:1px solid var(--bd);font:13px/1.7 ui-monospace,Consolas,monospace;padding:16px;min-height:150px;overflow:hidden}
+.term i{color:#7ee787;font-style:normal}.term em{color:#79c0ff;font-style:normal}
+.dots span{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;background:#ff5f56}.dots span:nth-child(2){background:#ffbd2e}.dots span:nth-child(3){background:#27c93f}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:10px 0 60px}
+.stat{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;text-align:center}
+.stat b{font-size:28px;display:block}.stat span{color:var(--mu);font-size:13px}
+section{padding:34px 0}h2{font-size:30px;letter-spacing:-.5px;margin:0 0 6px}.sub{color:var(--mu);margin:0 0 22px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.chip{border:1px solid var(--bd);background:var(--card);color:var(--mu);border-radius:99px;padding:6px 14px;font:inherit;font-size:14px;cursor:pointer}
+.chip.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:10px;transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:var(--ac)}
+.card h3{margin:0;font-size:18px}.card p{margin:0;color:var(--mu);font-size:15px}
+.pill{font-size:12px;color:var(--ac);background:color-mix(in srgb,var(--ac) 12%,transparent);padding:2px 9px;border-radius:99px;font-weight:600}
+.st{display:flex;gap:6px;flex-wrap:wrap}.soon{opacity:.5;cursor:default}.card .lk{margin-top:auto;display:flex;gap:14px;font-size:14px;font-weight:600;color:var(--ac)}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.bar{height:6px;background:var(--bd);border-radius:9px;margin-top:6px;overflow:hidden}.bar div{height:100%;width:0;background:linear-gradient(90deg,var(--ac),var(--ac2));transition:width 1.2s}
+.tl{border-left:2px solid var(--bd);padding-left:20px;display:grid;gap:18px}
+.tl div{position:relative}.tl div:before{content:"";position:absolute;left:-27px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--ac)}
+.tl small{color:var(--mu)}
+.ct{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:26px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+input,textarea{width:100%;padding:11px;border-radius:10px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);font:inherit;margin-bottom:10px}
+footer{padding:30px 0;color:var(--mu);font-size:14px;text-align:center}
+.rv{opacity:0;transform:translateY(20px);transition:.7s}.rv.in{opacity:1;transform:none}
+#pal{position:fixed;inset:0;background:#0009;display:none;align-items:flex-start;justify-content:center;padding-top:15vh;z-index:99}
+#pal.o{display:flex}#pal div{background:var(--card);border:1px solid var(--bd);border-radius:14px;width:min(520px,92%);padding:12px}
+#pal a{display:block;padding:9px 12px;border-radius:8px;color:var(--tx)}#pal a:hover,#pal a.s{background:var(--bg)}
+@media(max-width:760px){.hero,.ct{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.l .h{display:none}}
+.ph{width:100%;border-radius:18px;display:block;margin-bottom:14px;border:1px solid var(--bd);box-shadow:0 20px 50px #4f46e533}
+.av{aspect-ratio:1;display:grid;place-items:center;align-content:center;gap:2px;position:relative;overflow:hidden;background:radial-gradient(circle at 25% 15%,var(--ac) 0,transparent 55%),radial-gradient(circle at 85% 90%,var(--ac2) 0,transparent 50%),var(--card)}
+.av span{font-size:88px;font-weight:800;letter-spacing:-5px;color:#fff;line-height:1;text-shadow:0 8px 30px #0006;position:relative}
+.av small{color:#fff;font-weight:600;font-size:16px;position:relative}.av em{color:#ffffffb3;font-style:normal;font-size:13px;position:relative}
+.ring{position:absolute;width:62%;aspect-ratio:1;border-radius:50%;border:2px dashed #ffffff66;animation:sp 24s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(600px 400px at 85% -5%,color-mix(in srgb,var(--ac) 22%,transparent),transparent),radial-gradient(500px 400px at -5% 30%,color-mix(in srgb,var(--ac2) 16%,transparent),transparent)}
+.mq{overflow:hidden;border-block:1px solid var(--bd);margin:0 0 34px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.mq div{display:flex;gap:44px;width:max-content;padding:14px 0;animation:mv 30s linear infinite;color:var(--mu);font-weight:600;white-space:nowrap}
+@keyframes mv{to{transform:translateX(-50%)}}
+.card{backdrop-filter:blur(6px)}
+.av .pf{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;z-index:1}
+.av.ok:after{content:"";position:absolute;left:0;right:0;bottom:0;height:42%;background:linear-gradient(transparent,#000b);z-index:2}
+.av.ok .ring{display:none}
+.av.ok span{position:absolute;top:16px;left:16px;z-index:3;font-size:22px;letter-spacing:-1px;padding:8px 14px;border-radius:12px;background:linear-gradient(135deg,var(--ac),var(--ac2));text-shadow:none;box-shadow:0 8px 24px #0005}
+.av.ok small,.av.ok em{position:absolute;left:18px;z-index:3}
+.av.ok small{bottom:36px;font-size:18px}.av.ok em{bottom:16px}
+</style>
+</head>
+<body>
+<nav><div class="w"><b>dakalo<span class="g">.dev</span></b>
+<div class="l"><a class="h" href="#work">Work</a><a class="h" href="#skills">Skills</a><a class="h" href="#path">Journey</a><a class="h" href="#contact">Contact</a>
+<button class="btn" id="k">Search <kbd>Ctrl K</kbd></button><button class="btn" id="th" aria-label="Toggle theme">◐</button></div></div></nav>
+
+<main class="w">
+<div class="hero">
+ <div>
+  <span class="tag"><i class="dot"></i> Open to roles &amp; freelance work</span>
+  <h1>I build <span class="g" id="ty">web apps</span><br>that automate real work.</h1>
+  <p>Full-Stack AI Engineer in Pretoria. ZAIO Institute of Technology graduate, FNB App Academy certified. I combine React, Node and n8n workflows to ship products people actually use.</p>
+  <div class="cta"><a class="btn p" href="#work">See my work</a><a class="btn" href="mailto:mafelainnocent@gmail.com">Hire me</a><a class="btn" href="documents/dakalo-cv.pdf">Download CV</a></div>
+ </div>
+ <div class="rt"><div class="ph av"><img class="pf" src="images/profile.png" alt="Dakalo Mafela" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><div class="ring"></div><span>DM</span><small>Full-Stack AI Engineer</small><em>Pretoria · South Africa</em></div><div class="term"><div class="dots"><span></span><span></span><span></span></div><div id="tm"></div></div></div>
+</div>
+<div class="stats rv"><div class="stat"><b data-n="34">0</b><span>Projects built</span></div><div class="stat"><b data-n="15" data-s="+">0</b><span>Live projects</span></div><div class="stat"><b data-n="6">0</b><span>Deployments</span></div><div class="stat"><b data-n="4">0</b><span>n8n workflows</span></div></div>
+
+<div class="mq"><div><span>◆ React</span><span>◆ Node.js</span><span>◆ Express</span><span>◆ n8n Automation</span><span>◆ RAG &amp; AI Agents</span><span>◆ SQL / NoSQL</span><span>◆ REST APIs</span><span>◆ Git &amp; GitHub</span><span>◆ Responsive UI</span><span>◆ React</span><span>◆ Node.js</span><span>◆ Express</span><span>◆ n8n Automation</span><span>◆ RAG &amp; AI Agents</span><span>◆ SQL / NoSQL</span><span>◆ REST APIs</span><span>◆ Git &amp; GitHub</span><span>◆ Responsive UI</span></div></div>
+<section id="work" class="rv"><h2>Selected work</h2><p class="sub">Real systems first, practice builds after. Filter by what you care about.</p>
+<div class="chips" id="ch"></div><div class="grid" id="gr"></div></section>
+
+<section id="skills" class="rv"><h2>Skills</h2><p class="sub">Strong where I've shipped, growing where I'm learning.</p><div class="sk" id="sk"></div></section>
+
+<section id="path" class="rv"><h2>Journey</h2><p class="sub">Fast learner, consistent builder.</p>
+<div class="tl"><div><b>Full Stack Development, FNB App Academy</b><br><small>2025 · 32 credits · Design Thinking to Backend and APIs</small></div>
+<div><b>ZAIO Institute of Technology</b><br><small>2025 to 2026 · JavaScript, React, Node.js, databases · Graduated</small></div>
+<div><b>Now</b><br><small>Building automation and AI-assisted products, looking for my first developer role</small></div></div></section>
+
+<section id="contact" class="rv"><div class="ct"><div><h2>Let's build something</h2><p class="sub">Have a role or project in mind? I reply fast.</p>
+<p>📧 <a href="mailto:mafelainnocent@gmail.com">mafelainnocent@gmail.com</a><br>📞 <a href="tel:+27797032459">+27 79 703 2459</a><br>📍 Pretoria, South Africa</p>
+<p><a class="pill" href="https://github.com/Dakalomafela">GitHub</a> <a class="pill" href="https://www.linkedin.com/in/dakalo-mafela-2503581b1/">LinkedIn</a> <a class="pill" href="https://www.tiktok.com/@dakalotech77">TikTok</a> <a class="pill" href="https://www.instagram.com/dakalotech77">Instagram</a></p></div>
+<div><input id="fn" placeholder="Your name"><input id="fe" placeholder="Your email"><textarea id="fm" rows="4" placeholder="Message"></textarea><button class="btn p" id="fs">Send via email</button></div></div></section>
+</main>
+<footer>© 2026 Dakalo Mafela · Pretoria, South Africa</footer>
+
+<div id="pal"><div><input id="pi" placeholder="Jump to… (type: work, skills, github, cv)"><div id="pl"></div></div></div>
+
+<script>
+const P=[
+{t:"Student Feedback Automation",c:"Automation",d:"React feedback form wired to an n8n workflow that processes and routes student feedback automatically.",s:["React","n8n","Webhooks"],l:"https://student-feedback-dakalo.netlify.app/",g:"https://github.com/Dakalomafela/feedback-form.git"},
+{t:"RAG Student Assistant",c:"AI",d:"Retrieval-augmented assistant that answers student questions from the Handbook PDF with page-cited sources, served as a FastAPI endpoint wired into n8n.",s:["Python","FastAPI","ChromaDB","n8n"],g:"https://github.com/Dakalomafela/rag-assistant"},
+{t:"Master Spelling Bee Platform",c:"Full Stack",d:"In progress: competition management platform for spelling bees across South Africa, with role-based dashboards, a Node.js API and PostgreSQL.",s:["React","Node","PostgreSQL"]},
+{t:"Urban Threads",c:"E-commerce",d:"Streetwear online store with product categories, a shopping bag, login and a dark-mode toggle.",s:["HTML","CSS","JS"],l:"https://urban-threadsinno.netlify.app/",g:"https://github.com/Dakalomafela/urban-threads"},
+{t:"YouTube Clone",c:"Front End",d:"Responsive video grid and sidebar navigation.",s:["HTML","CSS","JS"],l:"https://daki-yotube-clone.netlify.app/",g:"https://github.com/Dakalomafela/yotube-clone.git"},
+{t:"Netflix Landing Page",c:"Front End",d:"Responsive landing page focused on layout and UI craft.",s:["HTML","CSS"],l:"https://dakalonetfliks.netlify.app/",g:"https://github.com/Dakalomafela/netflix-landing-page.git"},
+{t:"Tesla Landing Page",c:"Front End",d:"Modern electric vehicle showcase page.",s:["HTML","CSS"],l:"https://dakaloecarsss.netlify.app/",g:"https://github.com/Dakalomafela/tesla-landing-page"}];
+const K=[["JavaScript",85],["React",75],["Node.js / Express",70],["HTML & CSS",92],["SQL / NoSQL",65],["n8n Automation",78],["Git & GitHub",80],["Bootstrap",85]];
+const $=s=>document.querySelector(s);
+const cats=["All",...new Set(P.map(p=>p.c))];let cur="All";
+function draw(){$("#ch").innerHTML=cats.map(c=>`<button class="chip ${c==cur?"on":""}" data-c="${c}">${c}</button>`).join("");
+$("#gr").innerHTML=P.filter(p=>cur=="All"||p.c==cur).map(p=>`<div class="card"><span class="pill" style="align-self:flex-start">${p.c}</span><h3>${p.t}</h3><p>${p.d}</p><div class="st">${p.s.map(x=>`<kbd>${x}</kbd>`).join("")}</div><div class="lk">${p.l?`<a href="${p.l}">Live ↗</a>`:`<a class="soon">Live · soon</a>`}<a href="${p.g||"https://github.com/Dakalomafela"}">Code ↗</a></div></div>`).join("")}
+$("#ch").onclick=e=>{if(e.target.dataset.c){cur=e.target.dataset.c;draw()}};draw();
+$("#sk").innerHTML=K.map(k=>`<div class="stat" style="text-align:left"><b style="font-size:16px">${k[0]}</b> <small style="color:var(--mu)">${k[1]>=85?"Advanced":k[1]>=70?"Proficient":"Growing"}</small><div class="bar"><div data-w="${k[1]}"></div></div></div>`).join("");
+// typing words
+const W=["web apps","AI workflows","React interfaces","APIs"];let wi=0,ci=0,del=0;
+(function tp(){const w=W[wi];ci+=del?-1:1;$("#ty").textContent=w.slice(0,ci)||" ";let d=del?40:90;if(!del&&ci==w.length){del=1;d=1400}else if(del&&ci==0){del=0;wi=(wi+1)%W.length;d=300}setTimeout(tp,d)})();
+// terminal
+const L=['<i>$</i> whoami','<em>dakalo</em> · full-stack AI engineer · pretoria','<i>$</i> stack --current','react · node · sql · <em>n8n</em>','<i>$</i> status','shipping automations, open to work ✔'];let li=0;
+(function tl(){if(li<L.length){$("#tm").innerHTML+=L[li++]+"<br>";setTimeout(tl,700)}})();
+// reveal + counters + bars
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add("in");
+e.target.querySelectorAll("[data-n]").forEach(n=>{let v=0,t=+n.dataset.n;const i=setInterval(()=>{v++;n.textContent=v+(n.dataset.s||"");if(v>=t)clearInterval(i)},900/t)});
+e.target.querySelectorAll("[data-w]").forEach(b=>b.style.width=b.dataset.w+"%");io.unobserve(e.target)}),{threshold:.15});
+document.querySelectorAll(".rv").forEach(r=>io.observe(r));
+// theme
+$("#th").onclick=()=>{const r=document.documentElement,d=getComputedStyle(r).getPropertyValue("--bg").trim()=="#0b0d14";r.dataset.theme=d?"light":"dark"};
+// command palette
+const C=[["Work","#work"],["Skills","#skills"],["Journey","#path"],["Contact","#contact"],["GitHub","https://github.com/Dakalomafela"],["LinkedIn","https://www.linkedin.com/in/dakalo-mafela-2503581b1/"],["Download CV","documents/dakalo-cv.pdf"],["Email Dakalo","mailto:mafelainnocent@gmail.com"]];
+function pl(q=""){$("#pl").innerHTML=C.filter(c=>c[0].toLowerCase().includes(q.toLowerCase())).map(c=>`<a href="${c[1]}">${c[0]}</a>`).join("")}
+function op(o){$("#pal").classList.toggle("o",o);if(o){pl();$("#pi").value="";$("#pi").focus()}}
+$("#k").onclick=()=>op(1);$("#pi").oninput=e=>pl(e.target.value);$("#pal").onclick=e=>{if(e.target.id=="pal"||e.target.tagName=="A")op(0)};
+document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key=="k"){e.preventDefault();op(1)}if(e.key=="Escape")op(0);if(e.key=="Enter"&&$("#pal").classList.contains("o")){const a=$("#pl a");if(a)a.click()}});
+// contact -> mailto
+$("#fs").onclick=()=>{const b=encodeURIComponent(($("#fm").value)+"\n\n"+$("#fn").value+" ("+$("#fe").value+")");location.href="mailto:mafelainnocent@gmail.com?subject="+encodeURIComponent("Portfolio enquiry from "+($("#fn").value||"visitor"))+"&body="+b};
+</script>
+</body>
+</html>
